@@ -1,0 +1,63 @@
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: aliceblue;
+    color: #0a0000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing:border-box;
+    padding: 50px 30px;
+    border-radius: 5px;
+}
+body{
+   background-image: url(40d21112fea6622bdde613a2d719e55f--quantum-physics-sacred-geometry.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #b7e3e3;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #010a12;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #4004d9;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background:green;
+    color: #000;
+}

@@ -1,0 +1,45 @@
+body{
+  background-image: url(GIF.gif);
+  background-repeat: no no-repeat;
+  background-size: cover;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size:55px;
+}
+main p{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+h2{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer p{
+  color: white;
+}
+  
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; 
+    margin-left: 45%;
+ }
+  
+ .button:hover {
+    background-color: #0d7607;
+    color:wheat;
+  }  
+ 

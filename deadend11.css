@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#end{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("over_back.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+ .text{
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+.text h2{
+    font-size: 40px;
+    font-family: 'monospace';
+}
+.text p{
+    font-size: 40px;
+    font-family: 'monospace';
+}
+.main-btn{
+    margin: 30px auto 0;
+}
+.main-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: rgb(93, 32, 123);
+    background-color: rgb(198, 165, 229);
+    border: .5px solid rgb(93, 32, 123);
+    font-size: 18px;
+    transition-duration: 0.4s;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.pos:hover{
+    background-color: rgb(83, 27, 111);
+    color: azure;
+}
+.neg:hover{
+    background-color: rgb(83, 27, 111);
+    color: azure;
+}
+#sideNav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: none;
+    z-index: 2;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(58, 10, 82);
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+table {
+    width: 100%; /* Set the width to 100% */
+    max-width: 800px; /* Set a maximum width for the table */
+    margin: 0 auto; /* Center align the table */
+    border-collapse: collapse; /* Collapse the table borders */
+}
+
+th, td {
+    border: 1px solid white; /* Add border to table cells */
+    padding: 10px; /* Add padding to table cells */
+    text-align: center;
+    font-size:20px;
+    color:white; /* Center align table cell content */
+}
+th, th
+{
+    color:black;
+}
+
+
+th {
+    background-color: #f2f2f2; /* Set background color for table header */
+}

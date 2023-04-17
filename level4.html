@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="level4.css">
+
+</head>
+<body>
+  <div class="popup">
+    <div class="popup-content">
+        <h1>x</h1>
+        <h2>Dystopian Future</h2>
+        <p>Great Job..You lost yourself in the middle of a space-war in the mysterious dystopian future. Fight back, Win and Return.<br>Use up-arrow to shoot and side arrows to move. All the best!<br>Close the window and start answering</p>
+    </div>
+</div>
+
+<script>
+  const popup = document.querySelector('.popup');
+  const X = document.querySelector('.popup-content h1');
+
+  window.addEventListener('load', () => {
+      popup.classList.add('showPopup');
+      popup.childNodes[1].classList.add('showPopup');
+  })
+
+  X.addEventListener('click',()=>{
+      popup.classList.remove('showPopup');
+      popup.childNodes[1].classList.remove('showPopup');
+  })
+</script>
+  <h1 class="results">Your Score : 0</h1>
+  <div>
+  <div class="grid"></div>
+  <script src="app.js"></script>
+  <div id="myModal1" class="modal1">
+		<div class="modal-content1">
+			<h3>Congratulations! You Won!You performed the skill:Hand and Eye Co-ordination</h3>
+            <a href="gameover1.html" class="go1">Next</a>
+		</div>
+		</div>
+    <div id="myModal2" class="modal2">
+      <div class="modal-content2">
+        <h3>Oops!You lost!</h3>
+              <a href="deadend2.html" class="go2">Next</a>
+      </div>
+      </div>
+    </div>
+  
+</body>
+</html>

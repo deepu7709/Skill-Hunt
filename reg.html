@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Get Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body{
+            background-image: url(img4.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		input[type="text"], input[type="email"], input[type="password"] {
+			margin: 10px;
+			padding: 5px;
+			width: 300px;
+			border: 1px solid #f5ecec;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		.error {
+			color: red;
+            margin-top: -10px;
+			margin-bottom: 10px;
+		}
+        h1{
+            text-align: center;
+            padding-top: 5%;
+        }
+        label{
+            font-size:larger;
+            font-weight:bolder;
+        }
+	</style>
+</head>
+<body>
+	<h1>GET REGISTERED AND ENTER  INTO THE NEW WORLD</h1><br><br><br>
+	<form method="post" action="register.php">
+		<label for="username">Name:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<span class="error" id="password-error"></span>
+		<label for="confirm-password">Confirm Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required>
+		<span class="error" id="confirm-password-error"></span>
+		<input type="submit" value="Register">
+	</form>
+	<script>
+		// client-side validation for password
+		var passwordInput = document.getElementById("password");
+		var passwordError = document.getElementById("password-error");
+		passwordInput.addEventListener("input", function () {
+			if (passwordInput.validity.patternMismatch) {
+				passwordError.textContent = "Password must contain at least 8 characters including at least one uppercase letter, one lowercase letter, and one number.";
+			} else {
+				passwordError.textContent = "";
+			}
+		});
+        // client-side validation for confirm password
+		var confirmPasswordInput = document.getElementById("confirm-password");
+		var confirmPasswordError = document.getElementById("confirm-password-error");
+		confirmPasswordInput.addEventListener("input", function () {
+			if (confirmPasswordInput.validity.valueMismatch) {
+				confirmPasswordError.textContent = "Passwords do not match.";
+			} else {
+				confirmPasswordError.textContent = "";
+			}
+		});
+	</script>
+</body>
+</html>
